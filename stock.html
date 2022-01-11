@@ -29,14 +29,10 @@
       <!--Logo-->
       <h1><a href="index.html">Market Maestro</a></h1>
 
-      <!--Intro-->
+      <!--Topic-->
       <h2>Stock Market</h2>
 
-      <!--intro page that will be the first interaction with the user-->
-      <!--two labels to let the user choose which market they want-->
-
-      <!--Crypto market page start-->
-      <!--A seach bar for cryptocurrencies-->
+      <!--glitch- needs to stay for the stock form to work -->
       <form id="cryptoSearchForm" class="crypto">
         <input
           type="text"
@@ -49,26 +45,41 @@
 
       <!--Stock page-->
 
+      <div class="intro">
+      <h3>This stock ticker helps investors and traders make informed trading decisions for the Stock Market.</h3>
+      <h3>Search a publicly traded company to display securities updated in real-time on any day.</h3>
+    </div>
+
+      <div class="form">
+
       <div class="search">
       
       <form id="stockSearchForm" class="stockSearchForm">
         <div>
         <input
           type="text"
-          placeholder="Search Stock Market Ticker"
+          placeholder="Enter a NASDAQ symbol"
           name="query"
           class="rounded"
           />
         <button class="rounded">Search</button>
       </form></div>
+
+      <form id="stockSearchForm" class="stockSearchForm">
+        <div>
+        <button class="clear">Clear</button>
+      </form></div>
       
-    </form>
+
+  </div>
+
+</div>
 
       <container class="row" id="stockMarket" class="stock-ticker">
 
           <div class="column">
             <div class="ticker">
-              <p>Name <span id="tickerName"></span></p>
+              <p>Company <span id="tickerName"></span></p>
             </div>
           </div>
 
@@ -97,9 +108,6 @@
         </div>
 
     </container>
-
-    <!-- Footer -->
-    <footer><h6>&copy; 2022 Market Maestro</h6></footer>
 
     <!-- Javascript Docs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
