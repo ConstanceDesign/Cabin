@@ -18,104 +18,52 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/stock-styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
   <body>
-
-    <div style="background-image: url('./assets/images/stock.jpg');" class="background">
-
     <!--Logo-->
     <h1><a href="index.html">Market Maestro</a></h1>
 
-    <!--Intro-->
-    <h2>Search Stock Market Tickers</h2>
+    <!--Topic-->
+    <h2>Search the latest Crypto and Stock Markets</h2>
 
-    <!--intro page that will be the first interaction with the user-->
-    <!--two labels to let the user choose which market they want-->
-
-    <!--Crypto market page start-->
-    <!--A seach bar for cryptocurrencies-->
-    <form id="cryptoSearchForm" class="crypto">
-      <input
-        type="text"
-        placeholder="Crypto Ticker"
-        name="query"
-        class="rounded"
-      />
-      <button class="rounded">Search</button>
-    </form>
-
-    <!--Stock page-->
-    <form id="stockSearchForm" class="stock">
-      <input
-        type="text"
-        placeholder="Stock Ticker"
-        name="query"
-        class="rounded"
-      />
-      <button class="rounded">Search</button>
-    </form>
-    <div id="stockMarket" class="stock-ticker">
-      <div class="row justify-content-center">
-        <div class="w-25 p-3 h-75">
-          <p>Name: <span id="tickerName"></span></p>
-        </div>
-        <div class="w-25 p-3 h-75">
-          <p>Previous Close: <span id="stockPrice"></span></p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="w-25 p-3 h-75">
-          <p>MarketCap: <span id="stockMarketCap"></span></p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="w-25 p-3 h-75">
-          <p>High: <span id="high"></span></p>
-        </div>
-        <div class="w-25 p-3 h-75">
-          <p>low: <span id="low"></span></p>
-        </div>
-      </div>
+    <div class="intro">
+      <h3>
+        This stock ticker helps investors and traders make informed trading
+        decisions for the Stock Market.
+      </h3>
+      <h3>
+        Search a publicly traded company to display securities updated in
+        real-time on any day.
+      </h3>
     </div>
 
-        <!--Stock tickers-->
+    <div class="mobile">
+      <h3>
+        Search a publicly traded company to display securities updated in
+        real-time on any day.
+      </h3>
+    </div>
 
     <div class="row">
-      <div class="column">
-        <div class="ticker">
-          <p>Name <span id="tickerName"></span></p>
-        </div>
+      <div
+        class="column"
+        style="background-image: url('./assets/images/stock.jpg')"
+      >
+        <h2>Stock Market</h2>
+        <button class="stock-button" href="stock.html">Ticker Page</button>
       </div>
-      <div class="column">
-        <div class="ticker">
-          <p>Previous Close <span id="stockPrice"></span></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ticker">
-          <p>Market Cap <span id="stockMarketCap"></span></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ticker">
-          <p>High <span id="high"></span></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ticker">
-          <p>Low <span id="low"></span></p>
-        </div>
+      <div
+        class="column"
+        style="background-image: url('./assets/images/crypto.jpg')"
+      >
+        <h2>Crypto Market</h2>
+        <button class="crypto-button">Ticker Page</button>
       </div>
     </div>
 
     <!-- Footer -->
     <footer><h6>&copy; 2022 Market Maestro</h6></footer>
-
-    <!-- Javascript Docs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
