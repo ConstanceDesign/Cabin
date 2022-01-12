@@ -144,16 +144,6 @@ p {
   padding-right: 50px;
 }
 
-/*search form*/
-
-.form {
-  flex-wrap: wrap;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-}
-
 /*search field*/
 
 #display {
@@ -167,8 +157,6 @@ p {
   position: relative;
   width: 300px;
   height: 50px;
-  margin-left: 30px;
-  margin-right: 20px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
   color: #000;
@@ -186,14 +174,16 @@ input:focus {
 /*search field button*/
 
 .rounded {
+  display: inline-block;
+  position: relative;
   outline: none !important;
-  float: inherit;
   width: 150px;
   height: 51px;
   margin-top: 0px;
-  margin-left: 0px;
+  margin-left: 11px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
+  text-transform: uppercase;
   color: var(--dark-green);
   border: 0;
   background-color: var(--light-green);
@@ -211,12 +201,16 @@ button:hover {
 /*clear field button*/
 
 .clear {
-  float: inherit;
+  display: inline-block;
+  position: relative;
+  outline: none !important;
   width: 150px;
   height: 51px;
-  margin-left: 450px;
+  top: -50px;
+  margin-left: 103%;
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
+  text-transform: uppercase;
   color: var(--dark-green);
   border: 0;
   border-radius: 5px;
@@ -229,6 +223,16 @@ button:hover {
 .clear:hover {
   background-color: var(--bright-green);
   color: var(--dark-green);
+}
+
+/*search form*/
+
+.form {
+  width: 660px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 /*stock ticker search results*/
