@@ -1,0 +1,63 @@
+/*removes browser default styling*/
+/* the * acts as a select all*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*CSS variables*/
+
+:root {
+  --white: #e9f0fd;
+  --dark-green: #173b48;
+  --blue-green: #3c6f81;
+  --light-blue-green: #4f869a;
+  --bright-blue-green: #73c0dc;
+  --mid-green: #1e9b53;
+  --bright-green: #009933;
+  --light-green: #90b93b;
+  --bright-lime: #98ce29;
+  --lime: #deeeae;
+  --sage: #909b7e;
+}
+
+.container {
+  flex-wrap: wrap;
+  display: flex;
+  /* justify-content: center; */
+}
+.column1 {
+  margin: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: green;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  color: yellowgreen;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.column2 {
+  margin: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: green;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  color: yellowgreen;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}

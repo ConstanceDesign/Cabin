@@ -120,7 +120,8 @@ p {
   text-align: center;
   padding-top: 16px;
   padding-bottom: auto;
-  line-height: 1.25;
+  margin: 0;
+  /* line-height: 1; */
   z-index: 2;
 }
 
@@ -617,7 +618,7 @@ button:hover {
       padding-right: 15px;
       width: 23vw;
       height: 40px;
-      margin-top: -5px;
+      margin-top: -12px;
       margin-left: -15px;
     }
   
@@ -654,4 +655,4 @@ button:hover {
       height: 35px;
     }
 
-}
+    }

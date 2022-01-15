@@ -1,6 +1,16 @@
 //creating an eventlistener that will run a function once the user searches for a crytpto currency
 //the function accounts for whether the user uses enter or the search button to commit the search
 const form = document.querySelector("#cryptoSearchForm");
+const clearBtn = document.getElementById("clearbtn");
+clearBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  console.log("I was clicked");
+  document.getElementById("coinname").innerHTML = "";
+  document.getElementById("price").innerHTML = "";
+  document.getElementById("marketCap").innerHTML = "";
+  document.getElementById("dayChange").innerHTML = "";
+  document.getElementById("weeklyChange").innerHTML = "";
+});
 console.log(form);
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
