@@ -16,18 +16,36 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="column1">
-        <button class="stock-button" href="stock.html">
-          Stock Ticker Page
-        </button>
+    <!-- Background -->
+    <background>
+      <div class="background-container">
+        <h1 class="homepage-logo"><a href="index.html">Market Maestro</a></h1>
+        <h2 class="tagline">fast real-time investment information</h2>
+        <div
+          class="column1"
+          style="background-image: url('./assets/images/stock-tile6.jpg')"
+        >
+          <button
+            class="stock-button"
+            onclick="window.location.href='stock.html';"
+          >
+            Stock Ticker
+          </button>
+        </div>
+
+        <div
+          class="column2"
+          style="background-image: url('./assets/images/crypto-tile.jpg')"
+        >
+          <button
+            class="crypto-button"
+            onclick="window.location.href='crypto.html';"
+          >
+            Crypto Ticker
+          </button>
+        </div>
       </div>
-      <div class="column2">
-        <button class="crypto-button" href="crypto.html">
-          Crypto Ticker Page
-        </button>
-      </div>
-    </div>
+    </background>
 
     <div class="footer">
       <h5>&copy; 2022 Market Maestro</h5>
