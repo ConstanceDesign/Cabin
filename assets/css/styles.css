@@ -1,4 +1,4 @@
-/*removes browser default styling*/
+/* Remove Browser Default Styling */
 /* the * acts as a select all*/
 * {
   margin: 0;
@@ -7,13 +7,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/*CSS variables*/
-
+/* CSS Variables */
 :root {
   --white: #e9f0fd;
   --dark-green: #173b48;
   --blue-green: #437d92;
-  --inbetween: #318aaa;
+  --inbetween: #1d7898;
   --light-blue-green: #4f869a;
   --bright-blue-green: #73c0dc;
   --mid-green: #1e9b53;
@@ -24,18 +23,14 @@
   --sage: #909b7e;
 }
 
-.crypto-search {
-  display: none;
-}
-
-/* homepage background*/
-
+/* Index Page Background*/
 .background-container {
   flex-wrap: wrap;
   column-count: 2;
   column-gap: 0;
 }
 
+/* Index Page Column 1 Background*/
 .column1 {
   height: 100vh;
   margin: 0;
@@ -48,6 +43,7 @@
   z-index: 1;
 }
 
+/* Index Page Column 2 Background*/
 .column2 {
   height: 100vh;
   margin: 0;
@@ -60,16 +56,7 @@
   z-index: 1;
 }
 
-/*homepage logo*/
-
-.wrapper {
-  float: none;
-  display: flex;
-  align-content: center;
-  padding-top: 20vh;
-  z-index: 3;
-}
-
+/* Index Page Logo */
 .homepage-logo {
   text-align: center;
   font-family: "Squada One", cursive;
@@ -93,6 +80,7 @@
   color: var(--blue-green);
 }
 
+/* Index Page Tagline */
 .tagline {
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
@@ -110,8 +98,7 @@
   z-index: 4;
 }
 
-/* ticker page background*/
-
+/* Ticker Page Backgrounds*/
 .background {
   flex-wrap: wrap;
   height: 100%;
@@ -124,8 +111,7 @@
   z-index: 1;
 }
 
-/*logo linking to index.html*/
-
+/* Ticker Page Logos */
 h1 {
   font-family: "Squada One", cursive;
   font-size: clamp(3rem, 10vw, 4rem);
@@ -144,19 +130,7 @@ h1 a:hover {
   color: var(--blue-green);
 }
 
-/*ticker page subtitles*/
-
-.h2-crypto {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
-  font-size: clamp(1.25rem, 9vw, 2.5rem);
-  color: var(--mid-green);
-  text-align: center;
-  padding-bottom: 50pt;
-  line-height: 1.25;
-  z-index: 2;
-}
-
+/* Ticker Stock Page Heading */
 .h2-stocks {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
@@ -168,8 +142,19 @@ h1 a:hover {
   z-index: 2;
 }
 
-/*paragraph*/
+/* Ticker Crypto Page Headings */
+.h2-crypto {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.25rem, 9vw, 2.5rem);
+  color: var(--mid-green);
+  text-align: center;
+  padding-bottom: 50pt;
+  line-height: 1.25;
+  z-index: 2;
+}
 
+/* Ticker Page Intros */
 h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.8rem, 5vw, 1.4rem);
@@ -184,8 +169,7 @@ h3 {
   z-index: 2;
 }
 
-/*link to go to Stock Market page*/
-
+/* Ticker Page Links to Each Other */
 h4 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14pt;
@@ -206,8 +190,7 @@ h4 a:hover {
   cursor: pointer;
 }
 
-/*footer heading*/
-
+/* Footer */
 h5 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12pt;
@@ -217,8 +200,7 @@ h5 {
   z-index: 2;
 }
 
-/*heading of ticker boxes (ie. Coin Name)*/
-
+/* Ticker Box Headings */
 p {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
@@ -232,8 +214,7 @@ p {
   z-index: 2;
 }
 
-/*stock button*/
-
+/* Index Page Stock Button */
 .stock-button {
   outline: none !important;
   height: 80px;
@@ -263,8 +244,7 @@ p {
   border: 0;
 }
 
-/*crypto button*/
-
+/* Index Page Crypto Button */
 .crypto-button {
   outline: none !important;
   height: 80px;
@@ -295,18 +275,7 @@ p {
   border: 0;
 }
 
-/*glitch - search won't work without crypto present*/
-
-.crypto {
-  display: none;
-}
-
-.mobile {
-  display: none;
-}
-
-/*intro paragraph div*/
-
+/* Ticker Page Intro Paragraph Section */
 .intro {
   margin-left: auto;
   margin-right: auto;
@@ -315,8 +284,16 @@ p {
   padding-right: 50px;
 }
 
-/*search field*/
+/* Search Form */
+.form {
+  width: 660px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 20px;
+}
 
+/* Ticker Page Search Fields */
 #display {
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
@@ -337,13 +314,25 @@ p {
   z-index: 1;
 }
 
+#cryptoSearchForm [type="text"] {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(0.5rem, 4vw, 1.25rem);
+  color: var(--dark-green);
+  background-color: var(--lime);
+  padding: 0px 15px;
+  border: 0;
+  z-index: 1;
+}
+
 input:focus {
   outline: none !important;
   background-color: var(--lime);
 }
 
-/*search field button*/
-
+/* Ticker Page Search Buttons */
 .rounded {
   display: inline-block;
   position: relative;
@@ -370,8 +359,7 @@ button:hover {
   border: 0;
 }
 
-/*clear field button*/
-
+/* Ticker Page Clear Buttons */
 .clear {
   display: inline-block;
   position: relative;
@@ -398,18 +386,38 @@ button:hover {
   color: var(--dark-green);
 }
 
-/*search form*/
-
-.form {
-  width: 660px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-bottom: 20px;
+/* Stock Ticker Search Results */
+#tickerName {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(0.5rem, 4vw, 1.25rem);
+  color: var(--dark-green);
 }
 
-/*stock ticker search results*/
+#stockPrice {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(0.5rem, 4vw, 1.25rem);
+  color: var(--dark-green);
+}
 
+#stockMarketCap {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(0.5rem, 4vw, 1.25rem);
+  color: var(--dark-green);
+}
+
+#high {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(0.5rem, 4vw, 1.25rem);
+  color: var(--dark-green);
+}
+
+#low {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(0.5rem, 4vw, 1.25rem);
+  color: var(--dark-green);
+}
+
+/* Crypto Ticker Search Results */
 #coinname {
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
@@ -440,7 +448,7 @@ button:hover {
   color: var(--dark-green);
 }
 
-/* Float five columns side by side */
+/* Ticker Box Columns */
 .column {
   float: left;
   width: 20%;
@@ -449,7 +457,7 @@ button:hover {
   color: var(--white);
 }
 
-/* Remove extra left and right margins, due to padding in columns */
+/* Ticker Box Rows */
 .row {
   flex-wrap: wrap;
   float: center;
@@ -457,14 +465,14 @@ button:hover {
   bottom: 100px;
 }
 
-/* Clear floats after the columns */
+/* Clear Floats Columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Boxes displaying ticker results */
+/* Ticker Boxes and Ticker Results */
 .ticker {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -478,6 +486,7 @@ button:hover {
   z-index: 1;
 }
 
+/* Link Under Ticker Boxes */
 .link {
   text-align: center;
   margin-top: 18px;
@@ -486,6 +495,7 @@ button:hover {
   padding-right: 20px;
 }
 
+/* Footer */
 .footer {
   position: fixed;
   left: 0;
@@ -495,6 +505,12 @@ button:hover {
   background: none;
 }
 
+/* Mobile Display Only */
+.mobile {
+  display: none;
+}
+
+/* Mobile Devices 420px and Under */
 @media (max-width: 420px) {
   .mobile {
     display: content;
@@ -526,6 +542,7 @@ button:hover {
     margin-left: -10px;
   }
 
+  /* Mobile Devices 280px and Under */
   @media (max-width: 280px) {
     .mobile {
       display: content;
