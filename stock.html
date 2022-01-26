@@ -31,18 +31,32 @@
       <h1><a href="index.html">Market Maestro</a></h1>
 
       <!--Topic-->
-      <h2>Stock Market</h2>
+      <h2 class="h2-stocks">Stock Market</h2>
 
       <!--glitch- needs to stay for the stock form to work -->
-      <form id="cryptoSearchForm" class="crypto">
-        <input
-          type="text"
-          placeholder="Crypto Ticker"
-          name="query"
-          class="rounded"
-        />
-        <button class="rounded">Search</button>
-      </form>
+      <div class="crypto-form">
+
+        <div class="crypto-search">
+        
+        <form id="cryptoSearchForm" class="crypto-ticker">
+          <div>
+          <input
+            type="text"
+            placeholder="Enter a coin name"
+            name="query"
+            class="rounded"
+            />
+          <button class="rounded">Search</button>
+          <!-- <button id='clearbtn' class="clear">Clear</button> -->
+        </form></div>
+  
+        <form class="crypto-ticker">
+          <div>
+          <button id='clearbtn' class="clear">Clear</button>
+        </form></div>
+        
+  
+    </div>
 
       <!--Stock page-->
 
@@ -116,7 +130,7 @@
 
     </container>
 
-    <div class="link"><h4><a href="crypto.html">Interested in the Crypto Currency? View Ticker.</a></h4></div>
+    <div class="link"><h4 class="h4-stocks"><a href="crypto.html">Interested in the Crypto Currency? View Ticker.</a></h4></div>
 
     <div class="footer">
       <h5>&copy; 2022 Market Maestro</h5>

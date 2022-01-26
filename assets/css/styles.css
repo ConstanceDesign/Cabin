@@ -12,7 +12,8 @@
 :root {
   --white: #e9f0fd;
   --dark-green: #173b48;
-  --blue-green: #3c6f81;
+  --blue-green: #437d92;
+  --inbetween: #318aaa;
   --light-blue-green: #4f869a;
   --bright-blue-green: #73c0dc;
   --mid-green: #1e9b53;
@@ -21,6 +22,10 @@
   --bright-lime: #98ce29;
   --lime: #deeeae;
   --sage: #909b7e;
+}
+
+.crypto-search {
+  display: none;
 }
 
 /* homepage background*/
@@ -71,7 +76,7 @@
   font-size: clamp(3.5rem, 12vw, 7.5rem);
   margin: 0;
   position: absolute;
-  margin-top: 35vh;
+  margin-top: 30vh;
   left: 50%;
   width: 100%;
   -ms-transform: translate(-50%, -50%);
@@ -89,20 +94,20 @@
 }
 
 .tagline {
-  display: wrap;
-  position: absolute;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   line-height: 1.1em;
-  font-size: clamp(1rem, 6vw, 3rem);
+  font-size: clamp(1rem, 6vw, 2.75rem);
+  margin: 0;
+  position: absolute;
+  margin-top: 43.5vh;
   color: var(--bright-green);
-  margin-top: 50vh;
   left: 50%;
   width: 100%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 3;
+  z-index: 4;
 }
 
 /* ticker page background*/
@@ -139,13 +144,24 @@ h1 a:hover {
   color: var(--blue-green);
 }
 
-/*Crypto Market subtitle*/
+/*ticker page subtitles*/
 
-h2 {
+.h2-crypto {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   font-size: clamp(1.25rem, 9vw, 2.5rem);
-  color: #4f869a;
+  color: var(--mid-green);
+  text-align: center;
+  padding-bottom: 50pt;
+  line-height: 1.25;
+  z-index: 2;
+}
+
+.h2-stocks {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.25rem, 9vw, 2.5rem);
+  color: var(--bright-blue-green);
   text-align: center;
   padding-bottom: 50pt;
   line-height: 1.25;
@@ -157,7 +173,7 @@ h2 {
 h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.8rem, 5vw, 1.4rem);
-  color: var(--lime);
+  color: var(--bright-blue-green);
   text-align: center;
   padding-bottom: 10pt;
   padding-left: 20pt;
@@ -173,7 +189,6 @@ h3 {
 h4 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14pt;
-  color: var(--mid-green);
   padding-bottom: 10pt;
   padding-left: 20pt;
   line-height: 1.25;
@@ -196,7 +211,6 @@ h4 a:hover {
 h5 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12pt;
-  font-weight: bold;
   color: var(--blue-green);
   padding-bottom: 10pt;
   padding-left: 20pt;
@@ -208,8 +222,9 @@ h5 {
 p {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
-  color: var(--bright-green);
+  color: var(--inbetween);
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -248,7 +263,7 @@ p {
   border: 0;
 }
 
-/*crypts button*/
+/*crypto button*/
 
 .crypto-button {
   outline: none !important;
@@ -315,7 +330,7 @@ p {
   height: 50px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
-  color: #000;
+  color: var(--dark-green);
   background-color: var(--lime);
   padding: 0px 15px;
   border: 0;
@@ -339,6 +354,7 @@ input:focus {
   margin-left: 11px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--dark-green);
   border: 0;
@@ -366,6 +382,7 @@ button:hover {
   margin-left: 103%;
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.5rem, 4vw, 1.25rem);
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--dark-green);
   border: 0;
@@ -478,7 +495,7 @@ button:hover {
   background: none;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .mobile {
     display: content;
   }
@@ -488,8 +505,8 @@ button:hover {
   }
 
   .tagline {
-    font-size: 25px;
-    padding-top: 65px;
+    font-size: 30px;
+    padding-top: 10px;
   }
 
   .stock-button {
@@ -507,5 +524,21 @@ button:hover {
   .footer {
     width: 25%;
     margin-left: -10px;
+  }
+
+  @media (max-width: 280px) {
+    .mobile {
+      display: content;
+    }
+
+    .tagline {
+      font-size: 24px;
+      padding-top: 35px;
+    }
+
+    .footer {
+      width: 25%;
+      margin-left: -10px;
+    }
   }
 }
