@@ -76,21 +76,28 @@ To create an interactive front-end project as a team fulfilling the following re
 
 18. I added the URLs to Bootcamp and submitted my assignment.
 
+## Lessons Learned
+
+I thought this would be a simple site with few page elements to style and make responsive in CSS. There was more involved than I anticipated, and I found my strong attention to aesthetic detail struggling with my new found CSS skills. In time I will be more experienced and able to save time with a better understanding CSS. I added a clear button and added it in Javascript as well.
+
 ### Project Status (Completed Assignment)
 
 Link to screenshots of the Market Maestro pages:
 
-! [Home Page Screenshot] (./assets/images/seo-accessibility-challenge.png)
+! [Index Page Screenshot] (./assets/images/market-maestro-index.png)
+! [Index Page Device (iPhone SE) Screenshot] (./assets/images/market-maestro-index-device.png)
 
-! [Stock Market Page Screenshot] (./assets/images/seo-accessibility-challenge.png)
+! [Stock Market Page Screenshot] (./assets/images/market-maestro-stock-page.png)
+! [Stock Market Page Device(iPhone 12 Pro) Screenshot] (./assets/images/market-maestro-stock-page-device.png)
 
-! [Crypto Market Page Screenshot] (./assets/images/seo-accessibility-challenge.png)
+! [Crypto Market Page Screenshot] (./assets/images/market-maestro-crypto-page.png)
+! [Crypto Market Page Device (iPhone 12 Pro) Screenshot] (./assets/images/market-maestro-crypto-page-device.png)
 
 URL of the deployed application:
-<https://snugglesmcgee.github.io/seo-accessibility-challenge/>
+<https://snugglesmcgee.github.io/MarketMaestro>
 
 URL of the GitHub repository:
-<https://github.com/SnugglesMcGee/seo-accessibility-challenge>
+<https://github.com/SnugglesMcGee/MarketMaestro.git>
 
 ---
 

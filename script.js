@@ -10,6 +10,7 @@ clearBtn.addEventListener("click", function (event) {
   document.getElementById("marketCap").innerHTML = "";
   document.getElementById("dayChange").innerHTML = "";
   document.getElementById("weeklyChange").innerHTML = "";
+  location.reload();
 });
 console.log(form);
 form.addEventListener("submit", async function (e) {
