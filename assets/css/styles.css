@@ -23,6 +23,11 @@
   --sage: #909b7e;
 }
 
+/* Bugs in Javascript Doc (quick fix) */
+.bugs {
+  display: none;
+}
+
 /* Index Page Background*/
 .background-container {
   flex-wrap: wrap;

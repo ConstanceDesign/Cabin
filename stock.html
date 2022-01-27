@@ -47,6 +47,34 @@
         <h3>Search a publicly traded company to display securities updated in real-time.</h3>
       </div>
 
+    <!-- Bugs in Javascript Doc (quick fix) -->
+
+        <!-- Search Form -->
+        <div class="bugs">
+
+          <div class="search">
+          
+          <form id="cryptoSearchForm" class="crypto-ticker">
+            <div>
+            <input
+              type="text"
+              placeholder="Enter a symbol"
+              name id="query"
+              class="rounded"
+              />
+            <button class="rounded">Search</button>
+          </form></div>
+    
+          <form class="crypto-ticker">
+            <div>
+            <button id='clearbtn' class="clear">Clear</button>
+          </form></div>
+          
+    
+      </div>
+    
+    </div>
+
     <!-- Search Form -->
       <div class="form">
         <div class="search">
@@ -116,6 +144,7 @@
     </div>
 
     <!-- Javascript Docs -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
