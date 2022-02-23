@@ -1,61 +1,81 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Market Maestro</title>
+    <title>CABIN</title>
 
     <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Squada+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=La+Belle+Aurore&family=Poller+One&family=Roboto+Slab:wght@300;400;700;900&family=Rowdies&family=Satisfy&family=Zilla+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
 
     <!-- Link to CSS stylesheet -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
+
+    <link rel="shortcut icon" href="Favicon.ico" />
+
+    <title>CABIN - the gathering place for Canadian storytellers</title>
+
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
 
   <body>
     <!-- Background -->
     <background>
-      <div class="background-container">
+      <div style="background-image: url('./assets/images/aurora-arctic.jpg')">
         <!-- Logo and Tagline -->
-        <h1 class="homepage-logo"><a href="index.html">Market Maestro</a></h1>
-        <h2 class="tagline">fast real-time investment information</h2>
+        <h1 class="homepage-logo"><a href="index.html">CABIN</a></h1>
+        <h2 class="tagline">the gathering place for Canadian storytellers</h2>
+
+      <!-- Navigation -->
+        <nav class="topnav" id="myTopnav"></nav>>
+          <a href="#login" class="login">Log in</a>
+          <a href="#signup"class="signup">Sign up</a>
+          <a href="#subscribe"class="subscribe">Subscribe</a>
+          <a href="#" class="logo"><img
+            src="assets/images/cabin.svg"
+            alt="Cabin menu logo"
+            height="100"
+            width="150" /></a>
+          <a href="#search">Search</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
 
         <!-- Stock Column -->
         <div
           class="column1"
-          style="background-image: url('./assets/images/stock-tile.jpg')"
         >
           <button
             class="stock-button"
             onclick="window.location.href='stock.html';"
           >
-            Stock Ticker
+            EXPLORE
           </button>
-        </div>
 
-        <!-- Crypto Column -->
-        <div
-          class="column2"
-          style="background-image: url('./assets/images/crypto-tile.jpg')"
-        >
           <button
             class="crypto-button"
             onclick="window.location.href='crypto.html';"
           >
-            Crypto Ticker
+            SHARE
           </button>
         </div>
-      </div>
+
     </background>
 
     <!-- Footer -->
     <div class="footer">
-      <h5 class="index-h5">&copy; 2022 Market Maestro</h5>
+      <div class="campfire"><img src="assets/images/test-footer.png">
+      <h5 class="index-h5">&copy; 2022 Cabin</h5>
     </div>
   </body>
 </html>
