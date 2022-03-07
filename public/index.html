@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CABIN</title>
+    <title>CABIN - the gathering place for Canadian storytellers</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=La+Belle+Aurore&family=Poller+One&family=Roboto+Slab:wght@300;400;700;900&family=Rowdies&family=Satisfy&family=Zilla+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+
+    <link rel="shortcut icon" href="./images/Favicon.ico" />
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+  <body>
+    <!-- Background -->
+    <background>
+
+      <div style="background-image: url('./public/images/aurora-arctic.jpg')">
+        
+        <!-- Logo and Tagline -->
+        <h1 class="homepage-logo"><a href="index.html">CABIN</a></h1>
+        <h2 class="tagline">the gathering place for Canadian storytellers</h2>
+
+      <!-- Navigation -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onload="closeNav()" onclick="closeNav()">&times;</a>
+        <hr>
+        <ul>
+          <a href="#" class="active">
+              <span class="item">Home</span>
+          </a>
+      </ul>
+      <hr>
+      <ul>
+          <a href="#">
+              <span class="item">Top Ten Best Rated Stories</span>
+          </a>
+      </ul>
+      <hr>
+      <ul>
+          <a href="#">
+              <span class="item">Learn How to Write a Story</span>
+          </a>
+      </ul>
+      <hr>
+      <ul>
+          <a href="#">
+              <span class="item">Fiction</span>
+          </a>
+      </ul>
+      <hr>
+      <ul>
+          <a href="#">
+              <span class="item">Non-Fiction</span>
+          </a>
+      </ul>
+      <hr>
+      <ul>
+          <a href="#"><span class="item">Subscribe</span>
+          </a>
+      </ul>
+      <hr>
+      <ul>
+        <div class="row">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </ul>
+     </ul>
+    </div>
+
+
+      <!-- Log in / Sign Up -->
+      <div class="menu-nav">
+        <div class="right-nav">
+          <!-- <div class="login" style="cursor:pointer;" onclick="openLogin()" role="button">Log In</div> -->
+            <!-- <p class="deco" aria-hidden="true"> // </p> -->
+        </div>
+
+        <div class="right-nav">
+          <!-- <div class="signup" style="cursor:pointer;" onclick="openSignup()" role="button">Sign Up</div> -->
+        </div>
+
+        <span style="font-size:53px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+      <!-- Pop up Login -->
+    <div class="center">
+      <button id="show-login">LOG IN // SIGN UP</button>
+    </div>
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <form class="login-form">
+        <h2>LOG IN</h2>
+        <div class="form-element">
+          <label for="Email">Email</label>
+          <input type="email" id="email-login" placeholder="Enter email">
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password-login" placeholder="Enter password">
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button type="submit">LOG IN</button>
+        </div>
+        <div class="form-element">
+          <a href="signup.html">Sign up</a>
+        </div>
+      </form>
+    </div>
+
+        
+          <!-- Logo -->
+          <a href="index.html" class="logo"><img
+            src="./images/cabin.svg"
+            alt="Cabin menu logo"
+            height="100"
+            width="150" />
+            </a>
+          
+           
+          </a>
+        </nav>
+
+        <!-- Buttons -->
+        <div
+          class="column1"
+        >
+          <button
+            class="explore-button"
+            onclick="window.location.href='explore.html';"
+          >
+            EXPLORE
+          </button>
+
+          <button
+            class="share-button"
+            onclick="window.location.href='share.html';"
+          >
+            SHARE
+          </button>
+        </div>
+
+    </background>
+
+    <!-- Javascript -->
+    <script src="js/login.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h5 class="index-h5">&copy; 2022 Cabin</h5>
+        </footer>
+  </body>
+</html>
